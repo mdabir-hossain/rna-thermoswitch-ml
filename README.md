@@ -58,7 +58,9 @@ rna-thermoswitch-ml/
 │   ├── library3_200.csv
 │   ├── library4_300.csv
 │   ├── library_combined.csv
-│   ├── ml_predictions.csv
+│   └── ml_predictions.csv
+│
+├── results/
 │   ├── ml_topK_diverse.csv
 │   ├── ml_topK_diverse_clean.csv
 │   ├── ml_topK_summary.csv
@@ -73,18 +75,18 @@ rna-thermoswitch-ml/
 ├── figures/
 │   └── Supplementary Figures.pdf
 │
-├── results/
-│   └── (placeholder — add topK export later if needed)
-│
 ├── Data Science Project_Md Abir Hossain_29 August.pdf
 └── README.md
 
 ### File Descriptions
-- library_100.csv — First generated thermoswitch library (100 sequences)
-- library_combined.csv — Merged library used for ML training
-- ml_predictions.csv — Model predictions on all candidate sequences
-- ml_topK_diverse.csv — Diversified Top-K candidates
-- Supplementary Figures.pdf — Full supplementary visual analysis
+- library_100.csv – First generated thermoswitch library (100 sequences)
+- library_combined.csv – Merged library used for ML training
+- ml_predictions.csv – Model predictions on all candidate sequences
+- ml_topK_diverse.csv – Diversified Top-K candidates
+- ml_topK_diverse_clean.csv – Cleaned set of diversified Top-K candidates
+- ml_topK_summary.csv – Summary metrics per shortlisted sequence
+- ml_order_sheet.csv – Final synthesis order sheet for experimental validation
+- Supplementary Figures.pdf – Full supplementary visual analysis
 
 ## 📄 Thesis PDF
 

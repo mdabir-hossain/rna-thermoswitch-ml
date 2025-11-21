@@ -1,6 +1,13 @@
 # 📘 RNA Thermoswitch Design using Machine Learning & NUPACK
-MSc Data Science Project — University of Aberdeen (Distinction)
-Author: Md Abir Hossain (mdabir-hossain)
+
+**Original MSc Thesis Title:**  
+📄 *Computational Design of RNA Thermoswitches for High-Temperature Genetic Control in Bacillus subtilis*
+
+A complete machine learning + thermodynamic modelling pipeline for designing high-temperature RNA thermoswitches using NUPACK and Gradient Boosting models.
+
+**MSc Data Science Project — University of Aberdeen (Distinction)**  
+**Author:** Md Abir Hossain (mdabir-hossain)
+
 
 ## 🔬 Project Overview
 

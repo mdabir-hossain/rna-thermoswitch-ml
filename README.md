@@ -52,30 +52,39 @@ Tools: Jupyter Notebook, Matplotlib
 
 ## 📂 Repository Structure
 rna-thermoswitch-ml/
-│
 ├── data/
-│   ├── sample_sequences.csv
-│   ├── sample_features.csv
+│   ├── library_100.csv
+│   ├── library2_100.csv
+│   ├── library3_200.csv
+│   ├── library4_300.csv
+│   ├── library_combined.csv
+│   ├── ml_predictions.csv
+│   ├── ml_topK_diverse.csv
+│   ├── ml_topK_diverse_clean.csv
+│   ├── ml_topK_summary.csv
+│   └── ml_order_sheet.csv
 │
 ├── notebooks/
-│   ├── 01_feature_extraction.ipynb
-│   ├── 02_model_training.ipynb
-│   ├── 03_calibration_ranking.ipynb
+│   └── 01_thermoswitch_pipeline.ipynb
 │
 ├── scripts/
-│   ├── generate_sequences.py
-│   ├── extract_features.py
-│   ├── train_model.py
+│   └── (placeholder — add Python scripts later if needed)
 │
 ├── figures/
-│   ├── roc_curve.png
-│   ├── pr_curve.png
-│   ├── correlation_heatmap.png
+│   └── Supplementary Figures.pdf
 │
 ├── results/
-│   ├── top20_candidates.csv
+│   └── (placeholder — add topK export later if needed)
 │
+├── Data Science Project_Md Abir Hossain_29 August.pdf
 └── README.md
+
+### File Descriptions
+- library_100.csv — First generated thermoswitch library (100 sequences)
+- library_combined.csv — Merged library used for ML training
+- ml_predictions.csv — Model predictions on all candidate sequences
+- ml_topK_diverse.csv — Diversified Top-K candidates
+- Supplementary Figures.pdf — Full supplementary visual analysis
 
 ## 📄 Thesis PDF
 

@@ -9,7 +9,7 @@ This repository presents an MSc research project focused on the computational de
 
 ## Project Overview
 
-RNA thermoswitches are regulatory RNA elements whose structure changes with temperature, enabling temperature-responsive gene control. Most existing systems are designed for moderate temperatures, while this project focuses on **high-temperature genetic control above 60°C**.
+RNA thermoswitches are regulatory RNA elements whose structure changes with temperature, enabling temperature-responsive gene control. Most existing systems are designed for moderate temperatures, while this project focuses on **high-temperature genetic control above 70°C**.
 
 The workflow was designed to:
 - generate candidate RNA thermoswitch sequences computationally

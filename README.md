@@ -1,123 +1,78 @@
-# 📘 RNA Thermoswitch Design using Machine Learning & NUPACK
+# Computational Design of RNA Thermoswitches for High-Temperature Genetic Control in *Bacillus subtilis*
 
-**Original MSc Thesis Title:**  
-📄 *Computational Design of RNA Thermoswitches for High-Temperature Genetic Control in Bacillus subtilis*
+**MSc Thesis Project — University of Aberdeen (Distinction)**  
+**Author:** Md Abir Hossain
 
-A complete machine learning + thermodynamic modelling pipeline for designing high-temperature RNA thermoswitches using NUPACK and Gradient Boosting models.
+This repository presents an MSc research project focused on the computational design of RNA thermoswitches that remain functionally controlled at high temperatures in *Bacillus subtilis*. The work combines **thermodynamic sequence design using NUPACK** with **feature-based machine learning workflows** to identify and prioritise promising candidate switches for downstream experimental validation.
 
-**MSc Data Science Project — University of Aberdeen (Distinction)**  
-**Author:** Md Abir Hossain (mdabir-hossain)
+---
 
+## Project Overview
 
-## 🔬 Project Overview
+RNA thermoswitches are regulatory RNA elements whose structure changes with temperature, enabling temperature-responsive gene control. Most existing systems are designed for moderate temperatures, while this project focuses on **high-temperature genetic control above 60°C**.
 
-This project explores the computational design of RNA thermoswitches that activate near 70°C using a combination of:
+The workflow was designed to:
+- generate candidate RNA thermoswitch sequences computationally
+- simulate structural behaviour across multiple temperatures
+- extract thermodynamic and sequence-derived features
+- rank candidates using machine learning-assisted prioritisation
+- reduce a large design space into a shortlist suitable for synthesis and testing
 
-Machine Learning (Python, scikit-learn)
+This project brings together **computational biology**, **thermodynamic modelling**, and **data-driven candidate ranking** in a reproducible research pipeline.
 
-Thermodynamic simulation (NUPACK)
+---
 
-Feature engineering (k-mers, GC content, structural parameters)
+## Key Contributions
 
-Ranking and calibration pipelines
+- Designed and screened **700+ RNA thermoswitch candidates** using Python-based computational workflows
+- Simulated RNA secondary structure behaviour using **NUPACK 4.0**
+- Engineered thermodynamic and sequence-derived features for candidate evaluation
+- Trained a candidate-screening classifier and assessed ranking performance
+- Applied calibration and shortlist selection workflows to improve prioritisation quality
+- Reduced the candidate pool to a **final shortlist of 20 thermoswitches** for potential synthesis and experimental validation
 
-The goal was to design RNA sequences with favourable ON/OFF conformations at different temperatures, with a reproducible computational pipeline.
+---
 
-## 🧪 Key Results
+## Technical Approach
 
-Engineered 700+ synthetic RNA sequences using Python-based search.
+The project combines:
 
-Extracted thermodynamic features using NUPACK 4.0.
+- **Thermodynamic modelling:** RNA structure prediction and ensemble behaviour analysis across multiple temperatures
+- **Feature engineering:** GC content, structural descriptors, motif-based and sequence-derived properties
+- **Machine learning:** candidate prioritisation and ranking based on extracted features
+- **Decision support:** shortlist generation for downstream experimental follow-up
 
-Trained Gradient Boosting Classifier achieving:
+---
 
-ROC-AUC: 0.951
+## Selected Results
 
-PR-AUC: 0.875
+- Candidate screening classifier developed for shortlist prioritisation
+- Example evaluation metrics:
+  - **ROC-AUC:** 0.61
+  - **PR-AUC:** 0.275
+- Final synthesis-oriented shortlist produced from a larger computational candidate space
 
-Applied:
+> These results should be interpreted as part of a research-stage prioritisation workflow rather than a standalone biological validation outcome.
 
-Isotonic calibration
+---
 
-Guard-banding filters
+## Tech Stack
 
-QC checks
+- **Programming:** Python, NumPy, pandas
+- **Machine Learning:** scikit-learn
+- **Simulation / Modelling:** NUPACK 4.0
+- **Workflow / Analysis:** Jupyter Notebook, Matplotlib
 
-3-mer Jaccard diversification
+---
 
-Produced a Top-20 final shortlist of candidate thermoswitches for synthesis.
+## Repository Structure
 
-## 🧰 Tech Stack
-
-Programming: Python, NumPy, pandas
-
-ML: scikit-learn (GradientBoostingClassifier)
-
-Simulation: NUPACK
-
-Tools: Jupyter Notebook, Matplotlib
-
-## 📂 Repository Structure
-rna-thermoswitch-ml/
-├── data/
-│   ├── library_100.csv
-│   ├── library2_100.csv
-│   ├── library3_200.csv
-│   ├── library4_300.csv
-│   ├── library_combined.csv
-│   └── ml_predictions.csv
-│
-├── results/
-│   ├── ml_topK_diverse.csv
-│   ├── ml_topK_diverse_clean.csv
-│   ├── ml_topK_summary.csv
-│   └── ml_order_sheet.csv
-│
-├── notebooks/
-│   └── 01_thermoswitch_pipeline.ipynb
-│
-├── scripts/
-│   └── (placeholder — add Python scripts later if needed)
-│
-├── figures/
-│   └── Supplementary Figures.pdf
-│
-├── Data Science Project_Md Abir Hossain_29 August.pdf
+```text
+rna-thermoswitch/
+├── data/                  # Input, intermediate, and processed data
+├── library_100/           # Candidate library generation and design outputs
+├── library_700/           # Expanded candidate pool and screening files
+├── notebooks/             # Main analysis and modelling notebooks
+├── results/               # Model outputs, rankings, and selected candidates
+├── supplementary_figures/ # Additional project figures and visual summaries
 └── README.md
-
-### File Descriptions
-- library_100.csv – First generated thermoswitch library (100 sequences)
-- library_combined.csv – Merged library used for ML training
-- ml_predictions.csv – Model predictions on all candidate sequences
-- ml_topK_diverse.csv – Diversified Top-K candidates
-- ml_topK_diverse_clean.csv – Cleaned set of diversified Top-K candidates
-- ml_topK_summary.csv – Summary metrics per shortlisted sequence
-- ml_order_sheet.csv – Final synthesis order sheet for experimental validation
-- Supplementary Figures.pdf – Full supplementary visual analysis
-
-## 📄 Thesis PDF
-
-Your full MSc project report is available here:
-
-(Upload your PDF here — instructions below)
-
-## 🚀 How to Reproduce
-
-Install dependencies
-
-Run NUPACK simulations
-
-Extract features
-
-Train model
-
-Apply calibration + ranking
-
-View final shortlist
-
-## 🔖 Status
-
-✔ Completed
-✔ MSc Project
-✔ Reproducible pipeline
-✔ Future expansions planned
